@@ -1,4 +1,4 @@
-//Import Scanner for user input
+package NumberGuesserJava;//Import Scanner for user input
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
@@ -98,6 +98,7 @@ public class NumberGuesser {
                 }
             //Reveal random number
             System.out.printf("Random number was: %d\n",randomNumber);
+            //Ask user if they want to play again
             String playAgain = "";
             while(true){
                 System.out.print("Do you want to play again?(Y/N) ");
@@ -114,6 +115,7 @@ public class NumberGuesser {
                 }
             }
         }
+        //Farewell to the user
         scan.close();
         System.out.println("Thanks for playing!");
     }

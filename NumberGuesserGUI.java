@@ -102,7 +102,6 @@ public class NumberGuesserGUI {
                     //tries counter variable
                     int tryCount = 0;
                     while(tries >= tryCount){
-                        //Left here, continue letting user guess the number
                     }
                 }
             }

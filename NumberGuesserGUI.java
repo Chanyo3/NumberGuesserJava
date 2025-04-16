@@ -44,6 +44,7 @@ public class NumberGuesserGUI {
                 int randomNumber;
                 //Let user input number of tries
                 while(true){
+                    while(true){
                         try{
                             String triesInput = JOptionPane.showInputDialog(null,"Input maximum tries: ","Maximum of tries", JOptionPane.QUESTION_MESSAGE).trim();
                             if(triesInput.isEmpty()){
@@ -55,13 +56,14 @@ public class NumberGuesserGUI {
                                 JOptionPane.showMessageDialog(null, "Input number greater than 0");
                                 continue;
                             }
+                            break;
                         }
                         catch(NumberFormatException error){
                             JOptionPane.showMessageDialog(null,"Input integer/number only!");
-                            continue;
                         }
-
-                    //Input Starting number
+                    }
+                    while(true){
+                        //Input Starting number
                         try{
                             String startNumber = JOptionPane.showInputDialog(null,"Input minumum number to random Number: ","Minimum Number",JOptionPane.QUESTION_MESSAGE).trim();
                             if(startNumber.isEmpty()){
@@ -73,12 +75,14 @@ public class NumberGuesserGUI {
                                 JOptionPane.showMessageDialog(null, "Input number greater than 0");
                                 continue;
                             }
+                            break;
                         }
                         catch(Exception error){
                             JOptionPane.showMessageDialog(null,"Input integer/number only!");
-                            continue;
                         }
-                    //Let user input maximum number of random generator
+                    }
+                    while(true){
+                        //Let user input maximum number of random generator
                         try{
                             String endNumber = JOptionPane.showInputDialog(null,"Input maximum number to random Number: ","maximum Number",JOptionPane.QUESTION_MESSAGE).trim();
                             if(endNumber.isEmpty()){
@@ -90,11 +94,12 @@ public class NumberGuesserGUI {
                                 JOptionPane.showMessageDialog(null,"Input number greater than the minimum number!");
                                 continue;
                             }
+                            break;
                         }
                         catch(Exception error){
                             JOptionPane.showMessageDialog(null,"Input integer/Number only!");
-                            continue;
                         }
+                    }
                     //Generate random number
                     randomNumber = (random.nextInt(maxNumber - minNumber)+minNumber);
                     //Let user guess the number

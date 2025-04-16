@@ -3,10 +3,15 @@
 A Java-based number guessing game with both console and graphical user interface (GUI) components. The user selects the guessing range and number of attempts, making each playthrough customizable and engaging.
 
 🚀 Features
+
 📌Built using Java
+
 📌Console and GUI-based interface
+
 📌User-defined guessing range
+
 📌Limited attempts for guessing the number
+
 📌Simple and organized structure using classes and functions
 
 🧠 How It Works
